@@ -394,6 +394,23 @@ strong.conspirator-rate {
     height: 110px;
     top: -42px;
   }
+
+  .conspirator-item {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .schedule-table {
+    min-width: 800px;
+    text-align: center;
+  }
+
+  .schedule-body {
+    overflow-x: scroll;
+  }
+  h2.schedule-title {
+    width: 800px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -413,36 +430,6 @@ strong.conspirator-rate {
   }
   .main-body {
     grid-template-columns: 10% 85%;
-  }
-
-  strong.conspirator-rate {
-    font-size: 1.8rem;
-  }
-
-  .conspirator-select {
-    font-size: 1.6rem;
-    padding: 0.5rem 1rem;
-  }
-
-  h4.conspirator-item-title {
-    font-size: 16px;
-  }
-
-  .conspirator-item-text {
-    font-size: 14px;
-  }
-
-  .conspirator-item {
-    align-items: center;
-  }
-
-  h2.schedule-title.text-center {
-    font-size: 2.4rem;
-  }
-
-  .schedule-table {
-    width: 90%;
-    text-align: center;
   }
 }
 @media (max-width: 650px) {
@@ -475,18 +462,8 @@ strong.conspirator-rate {
     height: 102px;
     top: -39px;
   }
-
-  .conspirator-item {
-    flex-direction: column;
-    align-items: start;
-  }
-
-  .schedule-table {
-    width: 100%;
-  }
-
-  .schedule-table-data {
-    font-size: 1.5rem;
+  h2.title.text-capitalize {
+    font-size: 20px;
   }
 }
 
@@ -513,19 +490,23 @@ strong.conspirator-rate {
     font-size: 1.2rem;
   }
 
-  h2.schedule-title.text-center {
+  h2.title.text-capitalize {
     font-size: 18px;
   }
 
-  .schedule-table--head {
+  h4.conspirator-item-title {
+    font-size: 15px;
+  }
+
+  .conspirator-item-text {
     font-size: 14px;
   }
 
-  .schedule-table-data {
-    font-size: 14px;
+  strong.conspirator-rate {
+    font-size: 18px;
   }
 
-  .conspirator-title > .title {
+  button.conspirator-select {
     font-size: 18px;
   }
 }
