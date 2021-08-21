@@ -343,20 +343,6 @@ strong.conspirator-rate {
 }
 
 @media only screen and (max-width: 992px) {
-  section#main {
-    margin: 7rem 0;
-  }
-  .main-body {
-    grid-template-columns: 20% 75%;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .clicp {
-    height: 110px;
-    top: -42px;
-  }
-}
-@media only screen and (max-width: 768px) {
   .nav-toggle,
   .btn-remove {
     display: block;
@@ -388,7 +374,7 @@ strong.conspirator-rate {
   ul.main-navigation {
     position: fixed;
     z-index: 9999;
-    background: #000000cf;
+    background: #333333;
     top: 0;
     left: -35rem;
     min-height: 100vh;
@@ -398,6 +384,19 @@ strong.conspirator-rate {
     justify-content: center;
     transition: 0.5s all;
   }
+  section#main {
+    margin: 7rem 0;
+  }
+  .main-body {
+    grid-template-columns: 20% 75%;
+  }
+  .clicp {
+    height: 110px;
+    top: -42px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .navbar-brand {
     height: 6.3rem;
     width: 30rem;
@@ -415,6 +414,36 @@ strong.conspirator-rate {
   .main-body {
     grid-template-columns: 10% 85%;
   }
+
+  strong.conspirator-rate {
+    font-size: 1.8rem;
+  }
+
+  .conspirator-select {
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+  }
+
+  h4.conspirator-item-title {
+    font-size: 16px;
+  }
+
+  .conspirator-item-text {
+    font-size: 14px;
+  }
+
+  .conspirator-item {
+    align-items: center;
+  }
+
+  h2.schedule-title.text-center {
+    font-size: 2.4rem;
+  }
+
+  .schedule-table {
+    width: 90%;
+    text-align: center;
+  }
 }
 @media (max-width: 650px) {
   .inbar {
@@ -427,7 +456,7 @@ strong.conspirator-rate {
     text-align: center;
   }
 }
-@media only screen and (max-width: 475px) {
+@media only screen and (max-width: 600px) {
   .navbar-brand {
     height: 6rem;
     width: 25rem;
@@ -445,5 +474,58 @@ strong.conspirator-rate {
   .clicp {
     height: 102px;
     top: -39px;
+  }
+
+  .conspirator-item {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .schedule-table {
+    width: 100%;
+  }
+
+  .schedule-table-data {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  ul.main-navigation {
+    width: 27rem;
+  }
+
+  .main-navigation-link {
+    font-size: 14px;
+  }
+
+  .main-body-content-box > h4,
+  .main-body-content-box > h1 {
+    font-size: 16px;
+  }
+
+  .main-body-content-box > p {
+    font-size: 15px;
+  }
+
+  button.nav-toggle {
+    padding: 4px;
+    font-size: 1.2rem;
+  }
+
+  h2.schedule-title.text-center {
+    font-size: 18px;
+  }
+
+  .schedule-table--head {
+    font-size: 14px;
+  }
+
+  .schedule-table-data {
+    font-size: 14px;
+  }
+
+  .conspirator-title > .title {
+    font-size: 18px;
   }
 }

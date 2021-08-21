@@ -23,3 +23,14 @@ let li = document.querySelectorAll('.main-navigation-item');
                 el.classList.add('active');
             })
         })
+
+
+// select btn 
+
+let sBtn = document.querySelectorAll('.conspirator-select');
+
+sBtn.forEach(el => {
+    el.addEventListener('click', () => {
+        el.innerHTML = '&radic; selected'
+    })
+})
