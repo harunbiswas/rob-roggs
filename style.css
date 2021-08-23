@@ -24,6 +24,8 @@ body {
   background-image: url(assets/images/bg.png);
   background-size: cover;
   background-position: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #header {
@@ -71,12 +73,20 @@ body {
 }
 section#main {
   margin: 5rem 0;
+  position: fixed;
+  width: 100%;
+  height: 78vh;
+  bottom: 0;
+}
+#main > .container-fluid {
+  height: 100%;
 }
 
 .main-body {
   display: grid;
   grid-template-columns: 20% 75%;
   position: relative;
+  height: 100%;
 }
 
 .main-navigation {
@@ -126,6 +136,7 @@ li.main-navigation-item::after {
   background-color: #e5cfa2;
   border-radius: 0 2rem 2rem 0;
   position: relative;
+  height: 100%;
 }
 
 .main-body-content-box {
@@ -136,6 +147,7 @@ li.main-navigation-item::after {
   padding: 5rem 2rem 4rem 6rem;
   position: relative;
   box-shadow: rgb(0 0 0 / 46%) 0px 1px 5px 2px;
+  height: 100%;
 }
 
 .clicp {
@@ -343,6 +355,18 @@ strong.conspirator-rate {
   color: #7e7e7e;
 }
 
+.scroll-function {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  margin: 19px 1rem 2rem 1rem;
+  padding: 5rem 2rem 4rem 6rem;
+}
+
 @media only screen and (max-width: 992px) {
   .nav-toggle,
   .btn-remove {
@@ -376,9 +400,8 @@ strong.conspirator-rate {
     position: fixed;
     z-index: 9999;
     background: #333333;
-    top: 0;
     left: -35rem;
-    min-height: 100vh;
+    min-height: 83vh;
     width: 35rem;
     display: flex;
     flex-direction: column;
@@ -428,6 +451,7 @@ strong.conspirator-rate {
   }
   section#main {
     margin: 5rem 0;
+    width: 100%;
   }
   .main-body {
     grid-template-columns: 10% 85%;
