@@ -400,16 +400,9 @@ strong.conspirator-rate {
     align-items: start;
   }
 
-  .schedule-table {
-    min-width: 800px;
+  table.schedule-table {
+    width: 100%;
     text-align: center;
-  }
-
-  .schedule-body {
-    overflow-x: scroll;
-  }
-  h2.schedule-title {
-    width: 800px;
   }
 }
 
@@ -430,6 +423,15 @@ strong.conspirator-rate {
   }
   .main-body {
     grid-template-columns: 10% 85%;
+  }
+
+  .schedule-table {
+    min-width: 800px;
+    text-align: center;
+  }
+
+  .schedule-body {
+    overflow-x: scroll;
   }
 }
 @media (max-width: 650px) {
